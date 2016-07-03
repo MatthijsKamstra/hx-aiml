@@ -1,0 +1,26 @@
+# -cp src
+# -main Main
+# -neko bin/try_aiml.n
+# -debug
+# -dce full
+# -cmd nekotools boot bin/try_aiml.n
+# -cmd cd bin
+# -cmd neko try_aiml.n
+
+# --next
+
+-lib jQueryExtern
+-cp src
+-main MainJS
+-js bin/aiml.js
+-debug
+-dce full
+
+# --next
+
+# -cp src
+# -main Main
+# -cpp bin/cpp
+# -debug
+# -dce full
+# -cmd bin/cpp/Main-debug
