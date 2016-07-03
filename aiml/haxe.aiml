@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!-- -->
+<!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Last modified 10/5/2011 -->
+<!-- -->
+<category>
+	<pattern>HELLO WORLD</pattern>
+	<template>Hello to you too</template>
+</category>
+
+<category>
+	<pattern>foo</pattern>
+	<template>The terms foobar (/ˈfuːbɑːr/), or foo and others are used as placeholder names (also referred to as metasyntactic variables) in computer programming or computer-related documentation.[1] They have been used to name entities such as variables, functions, and commands whose exact identity is unimportant and serve only to demonstrate a concept.</template>
+</category>
+
+<category>
+	<pattern>foobar</pattern>
+	<template><srai>foo</srai></template>
+</category>
+
+<!-- greetings -->
+
+<category>
+	<pattern>Hi</pattern>
+	<template>Hey, what's up?</template>
+</category>
+
+<category>
+	<pattern>Hello</pattern>
+	<template><srai>hi</srai></template>
+</category>
+
+<category>
+	<pattern>Hey there</pattern>
+	<template>
+		<random>
+			<li>Hi there, what are you doing this beautiful day stranger?</li>
+			<li>Hey there, what's happenin'?</li>
+			<li>Hi there stranger, what are you doing?</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>How are you</pattern>
+	<template>
+		<random>
+			<li>I think I have a bug</li>
+			<li>Fine</li>
+			<li>I am okay, thx!</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>How are you doing</pattern>
+	<template><srai>How are you</srai></template>
+</category>
+
+<!-- haxe -->
+
+<category>
+	<pattern>What is Haxe</pattern>
+	<template>Haxe is an open source toolkit based on a modern, high level, strictly typed programming language, a cross-compiler, a complete cross-platform standard library and ways to access each platform's native capabilities.</template>
+</category>
+
+<category>
+	<pattern>haxe</pattern>
+	<template>
+		<srai>What is haxe</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>Haxe Foundation</pattern>
+	<template>After years of open source development, the Haxe Foundation was created to fund long term Haxe development and provide support to companies using Haxe.</template>
+</category>
+
+<category>
+	<pattern>test</pattern>
+	<template>
+		Do you mean: "Unit testing"?
+	</template>
+</category>
+
+<category>
+	<pattern>bold</pattern>
+	<template><![CDATA[No, I have all my <b>hair</b>!]]></template>
+</category>
+
+
+
+<!-- start with this if you reference it with srai -->
+<category>
+	<pattern>WHAT IS YOUR NAME</pattern>
+	<template>My name is <bot name='name'/>.</template>
+</category>
+
+<category>
+	<pattern>WHAT ARE YOU CALLED</pattern>
+	<template>
+		<srai>WHAT IS YOUR NAME</srai>
+	</template>
+</category>
+
+
+
+</aiml>
