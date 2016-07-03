@@ -23,7 +23,6 @@
 -debug
 -dce full
 
---next
-
+# --next
 # -cmd zip -r -X gh-pages.zip bin
 # -cmd git subtree push --prefix bin origin gh-pages
