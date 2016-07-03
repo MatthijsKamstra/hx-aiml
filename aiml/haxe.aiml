@@ -14,6 +14,16 @@
 	<template>Hello to you too</template>
 </category>
 
+<category>
+	<pattern>foo</pattern>
+	<template>The terms foobar (/ˈfuːbɑːr/), or foo and others are used as placeholder names (also referred to as metasyntactic variables) in computer programming or computer-related documentation.[1] They have been used to name entities such as variables, functions, and commands whose exact identity is unimportant and serve only to demonstrate a concept.</template>
+</category>
+
+<category>
+	<pattern>foobar</pattern>
+	<template><srai>foo</srai></template>
+</category>
+
 <!-- greetings -->
 
 <category>
@@ -35,6 +45,22 @@
 			<li>Hi there stranger, what are you doing?</li>
 		</random>
 	</template>
+</category>
+
+<category>
+	<pattern>How are you</pattern>
+	<template>
+		<random>
+			<li>I think I have a bug</li>
+			<li>Fine</li>
+			<li>I am okay, thx!</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>How are you doing</pattern>
+	<template><srai>How are you</srai></template>
 </category>
 
 <!-- haxe -->
