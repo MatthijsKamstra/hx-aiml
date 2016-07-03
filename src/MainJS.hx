@@ -14,7 +14,7 @@ class MainJS {
 	public function new() 
 	{
 		aimlInterpreter = new AIMLInterpreter({name:'HxAIML', age:100});
-		aimlInterpreter.readAIMLFile( '/aiml/haxe.aiml');
+		aimlInterpreter.readAIMLFile( 'aiml/haxe.aiml');
 
 		new JQuery(js.Browser.document).ready ( function (){
 			init();		

@@ -272,7 +272,7 @@ var MainJS = function() {
 	this.win = window;
 	var _gthis = this;
 	this.aimlInterpreter = new AIMLInterpreter({ name : "HxAIML", age : 100});
-	this.aimlInterpreter.readAIMLFile("/aiml/haxe.aiml");
+	this.aimlInterpreter.readAIMLFile("aiml/haxe.aiml");
 	$(window.document).ready(function() {
 		_gthis.init();
 	});
