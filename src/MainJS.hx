@@ -23,8 +23,7 @@ class MainJS {
 		});
 	}
 
-	function init():Void 
-	{
+	function init() {
 		// onclick submit
 		new JQuery("#btn-chat").click(function (e:Dynamic) {
 			getInput();			
@@ -38,8 +37,7 @@ class MainJS {
 		new JQuery('#btn-input').focus();
 	}
 
-	function getInput():Void 
-	{
+	function getInput() {
 		var text : String = new JQuery('#btn-input').val();
 		if(text.length <=1) return; // do something clever with no input
 		// trace('submit $text');
@@ -51,10 +49,7 @@ class MainJS {
 
 	}
 
-	public function userBalloon(str:String):Void {
-
-		// trace( 'userBalloon ($str)' );
-
+	function userBalloon(str:String) {
 		var li : String =  
 		'<li class="left clearfix"><span class="chat-img pull-left">
 			<img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
@@ -74,11 +69,9 @@ class MainJS {
 
 		var ul = new JQuery("ul.chat");
 		ul.prepend(li);
-		
 	}
 
-	public function botBalloon (str:String){
-		
+	function botBalloon (str:String) {
 		var li : String =  
 		'<li class="right clearfix"><span class="chat-img pull-right">
 			<img src="http://placehold.it/50/FA6F57/fff&text=BOT" alt="User Avatar" class="img-circle" />
@@ -102,7 +95,7 @@ class MainJS {
 
 
 
-	private function callbackChat (answer, wildCardArray, input){
+	function callbackChat (answer, wildCardArray, input){
 		haxe.Timer.delay(function () { 
 	    	botBalloon(answer);
 		}, 800);
@@ -110,8 +103,7 @@ class MainJS {
 
 	// ____________________________________ test ____________________________________
 
-	public function callChat():Void 
-	{	
+	function callChat() {	
 		trace(':: fake chat:: ');
 		aimlInterpreter.findAnswerInLoadedAIMLFiles('What is your name?', callback);
 		// aimlInterpreter.findAnswerInLoadedAIMLFiles('My name is Ben.', callback);
@@ -120,7 +112,7 @@ class MainJS {
 	}
 
 
-	private function callback (answer, wildCardArray, input){
+	function callback (answer, wildCardArray, input) {
 	    trace(answer + ' | ' + wildCardArray + ' | ' + input);
 	}
 
