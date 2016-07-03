@@ -6,7 +6,14 @@
 # -cmd nekotools boot bin/try_aiml.n
 # -cmd cd bin
 # -cmd neko try_aiml.n
+# --next
 
+# -cp src
+# -main Main
+# -cpp bin/cpp
+# -debug
+# -dce full
+# -cmd bin/cpp/Main-debug
 # --next
 
 -lib jQueryExtern
@@ -16,11 +23,7 @@
 -debug
 -dce full
 
-# --next
+--next
 
-# -cp src
-# -main Main
-# -cpp bin/cpp
-# -debug
-# -dce full
-# -cmd bin/cpp/Main-debug
+# -cmd zip -r -X gh-pages.zip bin
+# -cmd git subtree push --prefix bin origin gh-pages

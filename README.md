@@ -5,7 +5,8 @@ Hx-aiml is an interpreter for AIML (Artificial Intelligence Markup Language) wri
 
 I read about [aiml](http://www.alicebot.org/aiml.html) and thought I could use it for a personal project I am doing.
 
-I guess it would be fun to use it for Haxe FAQ, so I made a little demo for that.
+I guess it would be fun to use it for Haxe FAQ, so I made a [little demo](https://matthijskamstra.github.io/hx-aiml/) for that.
+
 
 # Warning
 
