@@ -292,6 +292,7 @@ MainJS.prototype = {
 				_gthis.getInput();
 			}
 		};
+		$("#btn-input").focus();
 	}
 	,getInput: function() {
 		var text = $("#btn-input").val();
